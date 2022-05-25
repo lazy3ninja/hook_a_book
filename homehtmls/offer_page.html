@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./offer_page_files/css" rel="stylesheet">
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+        border-radius: 20px;
+      }
+      body {
+        background-image: url(./b3.jpeg);
+
+        background-size: cover;
+      }
+
+      .column {
+        float: left;
+        width: 25%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 0 16px;
+        background-image: linear-gradient(180deg, #61a6ab, #fff);
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+        text-align: center;
+        font-size: 20px;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: teal;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 20px;
+      }
+
+      .button:hover {
+        background-color: goldenrod;
+      }
+      h2 {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 35px;
+      }
+      h3 {
+        text-align: center;
+        font-size: 20px;
+      }
+      .offers {
+        font-size: 70px;
+        font-family: "Dancing Script";
+        color: #fff;
+      }
+      .info {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="offers">OFFERS 🎉</h2>
+    <br>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <!--<img src="/w3images/team1.jpg" alt="Jane" style="width: 100%">-->
+          <div class="container">
+            <h2 style="text-align: center">SUMMER SALE!</h2>
+            <h3>GET UP TO %10 OFF on 1st Purchase!</h3>
+            <p class="title">⭐Applicable on all categories &amp; genres</p>
+            <p class="info" style="text-align: center">
+              🕓 valid till June 31,2022
+            </p>
+            <p><button class="button">ORDER NOW !</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <!--<img src="/w3images/team2.jpg" alt="Mike" style="width: 100%" />-->
+          <div class="container">
+            <h2 style="text-align: center">DEAL OF THE DAY!</h2>
+            <h3>BUY 2 GET 1 FREE!</h3>
+            <p class="title">
+              ⭐ Offer valid on selected products and publishers
+            </p>
+            <p class="info" style="text-align: center">
+              🕓 valid only for today
+            </p>
+            <p><button class="button">ORDER NOW !</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <!--<img src="/w3images/team1.jpg" alt="Jane" style="width: 100%">-->
+          <div class="container">
+            <h2 style="text-align: center">HOT DEAL!</h2>
+            <h3>SAVE UPTO 15% ON SELF-HELP BOOKS!</h3>
+            <p class="title">⭐ Applicable on all books of the author</p>
+            <p class="info" style="text-align: center">
+              🕓 valid till June 5,2022
+            </p>
+            <p><button class="button">ORDER NOW !</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <!--<img src="/w3images/team3.jpg" alt="John" style="width: 100%" />-->
+          <div class="container">
+            <h2 style="text-align: center">HOT DEAL!</h2>
+            <h3>SAVE UPTO 20% ON FICTION NOVELS !</h3>
+            <p class="title">⭐ Books of all authors are available</p>
+            <p class="info" style="text-align: center">
+              🕓 valid till May 31,2022
+            </p>
+            <p><button class="button">ORDER NOW !</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

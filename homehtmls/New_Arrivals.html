@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./New_Arrivals_files/css" rel="stylesheet">
+    <style>
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+      body {
+        background-image: linear-gradient(180deg, #61a6ab, #fff);
+      }
+
+      .column {
+        float: left;
+        width: 20%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .container {
+        padding: 0 18px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: grey;
+        text-align: center;
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: teal;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 15px;
+      }
+
+      .button:hover {
+        background-color: goldenrod;
+      }
+      .heading {
+        font-size: 60px;
+        font-family: "Dancing Script";
+        text-align: center;
+        margin-top: 10px;
+        color: #fff;
+      }
+      .amount {
+        text-align: center;
+        font-size: larger;
+        margin-top: 15px;
+      }
+      .amount span {
+        font-size: 15px;
+        color: gray;
+        text-decoration: line-through;
+        text-align: center;
+        padding-left: 4px;
+      }
+      h4 {
+        text-align: center;
+        margin-top: 15px;
+      }
+      h3 {
+        text-align: center;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="heading">New Arrivals</h2>
+    <br>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./New_Arrivals_files/Alchemist.jpeg" alt="Jane" style="width: 100%">
+          <div class="container">
+            <h4>THE ALCHEMIST</h4>
+            <div class="about">
+              <p class="title">Paulo Coelho</p>
+              <p class="amount">₹227<span>₹600</span></p>
+            </div>
+            <p><button class="button">BUY</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="./New_Arrivals_files/Atomic Habits.jpeg" alt="Mike" style="width: 100%">
+          <div class="container">
+            <h3>Atomic Habits</h3>
+            <p class="title">James Clear</p>
+            <p class="amount">₹600<span>₹799</span></p>
+            <p><button class="button">BUY</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="./New_Arrivals_files/How toWin Friend &amp; Influence People1.jpeg" alt="Jane" style="width: 100%">
+          <div class="container">
+            <h4>How to Win Friends and Influence People</h4>
+            <p class="title">Dale Carnegie</p>
+            <p class="amount">₹84<span>₹150</span></p>
+            <p><button class="button special">BUY</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="./New_Arrivals_files/Harry Porter.jpeg" alt="Jane" style="width: 100%">
+          <div class="container">
+            <h3>Harry Porter</h3>
+            <p class="title">JK Rowling</p>
+            <p class="amount">₹299<span>₹499</span></p>
+            <p><button class="button">BUY</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="./New_Arrivals_files/City of Demons1.jpeg" alt="Jane" style="width: 100%">
+          <div class="container">
+            <h3>City of Demons</h3>
+            <p class="title">Debbie Cassidy</p>
+            <p class="amount">₹127<span>₹257</span></p>
+            <p><button class="button">BUY</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

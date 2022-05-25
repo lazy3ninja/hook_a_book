@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Rent your book
+        </title>
+    </head>
+    <body>
+        <form method = 'POST'> {% csrf_token %}
+            {{ form.as_html }}
+            <input type = 'submit' value = 'Save'/>
+        </form>
+    </body>
+</html>
