@@ -1,0 +1,21 @@
+.text-box{
+    width: 90%;
+    color: rgb(97, 166, 171);
+    font-family: sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+.go
+{
+    color:rgb(97, 166, 171);
+    border:1px solid white;
+    filter:blur(8px);
+}
+
+.img
+{
+    color:aliceblue;
+}
