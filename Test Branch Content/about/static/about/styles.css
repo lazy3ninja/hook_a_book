@@ -1,0 +1,20 @@
+body{
+    background-image : url(./aboutbg.jpeg);
+    background-size : cover;
+}
+header{
+    font-family: 'Dancing Script', cursive;
+    line-height: 1.2;
+    padding : 20px;
+    text-align: center;
+    font-size : 30px;
+}
+main{
+    line-height : 1.5;
+    font-weight : bold;
+    font-style : italic;
+    color : rgb(39, 84, 100);
+    text-align : left;
+    font-family : 'Georgia', serif;
+    border : solid;
+}

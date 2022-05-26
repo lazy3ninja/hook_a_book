@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOOK-A-BOOK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <script src="../js/bootstrap.bundle.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/css/all.min.css"/> -->
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Koulen">
+    <link rel="stylesheet" href="home/home_style.css">
+    <link rel="stylesheet" href="home/newarrival.css">
+    <link rel="stylesheet" href="home/offer.css">
+
+</head>
+<body style="background-image:linear-gradient(white,rgb(97, 166, 171))">
+     <!-- ***********************NAVBAR*************************************** -->
+     <nav class="navbar fixed-top navbar-expand-sm titlebar py-0" style="background-color:rgb(97, 166, 171);">            
+        <div class="container-fluid">
+            <div class="navbar-header"><a class="navbar-brand ms-auto title2" href="#">Hook-a-Book</a></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <button type="button" class="btn" style=" color:white;background-color:black" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fa fa-bookmark px-2 " style="font-size:35px ;color:black" aria-hidden="true"></i>
+                  </li>
+                  <li class="nav-item">
+                    <i class="fa fa-cart-plus" style="font-size:35px ;color:black" aria-hidden="true"></i>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- ***********************NAVBAR*************************************** -->
+    <nav class="navbar sticky-top navbar-expand-sm " style="top:75px; background-color:black">            
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" style="color:rgb(97, 166, 171);" href="#">Home</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" nav-links collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class=" mx-auto navbar-nav">
+                <div class="row">
+                    <div class="col-sm "><li class="nav-item">
+                        <a class=" text-center trans nav-link active" aria-current="page" href="#">Profile</a>
+                    </li></div>
+                    <div class="col-sm "><li class="nav-item">
+                        <a class="text-center trans nav-link active" aria-current="page" href="#">About</a>
+                    </li></div>
+                    <div class="col-sm"><li class="nav-item">
+                        <a class="text-center trans nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li></div>
+                    <div class="col-sm"><li class="nav-item">
+                      <div class="dropdown">
+                      <a class="text-center trans nav-link active dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" href="#">Categories</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><button type="button" class="btn btn-info dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button></li>    
+                          <li><a class="dropdown-item" href="#">Action 2</a></li>
+                          <li><a class="dropdown-item" href="#">Action 3</a></li>
+                          <li><a class="dropdown-item" href="#">Action 4</a></li>
+                      </ul></div>
+
+                    </li></div>
+                    <div class="col-sm-4"><li class="nav-item">
+                      <div class="input-group rounded">
+                        <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+                        <span class="input-group-text border-0" id="search-addon">
+                          <i class="fas fa-search"></i>
+                        </span>
+                      </div>
+                  </li></div>
+                </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ************************Dialog Box********************************** -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class=" text-center modal-header">
+                <h5 class=" modal-title" id="exampleModalLabel">Hola Reader!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input type="email" placeholder="Email Address" id="form1Example1" class="form-control" for="form2Example1" />
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                      <input type="password" placeholder="Password" id="form1Example2" class="form-control" for="form2Example2" />
+                    </div>
+
+                    <!-- 2 column grid layout for inline styling -->
+                    <div class="row mb-4">
+                      <div class="col d-flex justify-content-center">
+                        <!-- Checkbox -->
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                          <label class="form-check-label" for="form1Example3"> Remember me </label>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <!-- Simple link -->
+                        <a href="#!">Forgot password?</a>
+                      </div>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="button" class="btn w-100 btn-primary btn-block mb-4">Sign in</button>
+
+                    <!-- Register buttons -->
+                    <div class="text-center">
+                      <p>Not a member? <a data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#!">Register</a></p>
+                      <p>or sign up with:</p>
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-facebook-f"></i>
+                      </button>
+
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-google"></i>
+                      </button>
+
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-twitter"></i>
+                      </button>
+
+                      <button type="button" class="btn btn-link btn-floating mx-1">
+                        <i class="fab fa-github"></i>
+                      </button>
+                    </div>
+                  </form>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Reset</button>
+                <button type="button" class="btn btn-primary">Submit</button>
+            </div> -->
+            </div>
+        </div>        
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class=" text-center modal-header">
+                  <h5 class=" modal-title" id="exampleModalLabel2">Join us!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+          <input type="email" id="form2Example0" placeholder="Username" for="form2Example0" class="form-control" />
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+          <input type="email" id="form2Example1" placeholder="Email Address" for="form2Example1" class="form-control" />
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+          <input type="password" placeholder="Password" id="form2Example2" class="form-control" />
+          </div>
+
+          <!-- Confirm-Password input -->
+          <div class="form-outline mb-4">
+          <input type="password" id="form2Example3" placeholder="Confirm Password" class="form-control" />
+          </div>
+
+          <!-- Register button -->
+          <button type="submit" class="btn w-100 btn-primary btn-block mb-4">Register</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div> 
+  <br>
+  <img class="img-fluid first_img" src="images/home3.jpg">
+  <div class="container-fluid">
+  <div class="row">
+   <div class="col-lg-6 text-center" ><a href=""><img class="img-fluid circle" src="images/Rentt.png"></div></a>
+   <div class="col-lg-6 text-center" ><a href=""><img class="img-fluid circle" src="images/Lent.png"></div></a>
+  </div></div>  
+  <hr><br>
+  <!-- ******************************************************New Arrivals**************************************************** -->
+  <h2 class="heading">New Arrivals</h2>
+    <br>
+
+    <div class="row">
+      <div class="column1">
+        <div class="card">
+          <img src="./images/Alchemist.jpeg" alt="Jane" style="width: 100%">
+          <div class="container1">
+            <h4>THE ALCHEMIST</h4>
+            <div class="about">
+              <p class="title">Paulo Coelho</p>
+              <p class="amount">₹227<span>₹600</span></p>
+            </div>
+            <p><button class="button1">BUY</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column1">
+        <div class="card">
+          <img src="./images/Atomic Habits.jpeg" alt="Mike" style="width: 100%">
+          <div class="container1">
+            <h3>Atomic Habits</h3>
+            <p class="title">James Clear</p>
+            <p class="amount">₹600<span>₹799</span></p>
+            <p><button class="button1">BUY</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <img src="./images/How toWin Friend & Influence People1.jpeg" alt="Jane" style="width: 100%">
+          <div class="container1">
+            <h4>How to Win Friends and Influence People</h4>
+            <p class="title">Dale Carnegie</p>
+            <p class="amount">₹84<span>₹150</span></p>
+            <p><button class="button1 special">BUY</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <img src="./images/Harry Potter.jpeg" alt="Jane" style="width: 100%">
+          <div class="container1">
+            <h3>Harry Potter</h3>
+            <p class="title">JK Rowling</p>
+            <p class="amount">₹299<span>₹499</span></p>
+            <p><button class="button1">BUY</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="card">
+          <img src="./images/City of Demons1.jpeg" alt="Jane" style="width: 100%">
+          <div class="container1">
+            <h3>City of Demons</h3>
+            <p class="title">Debbie Cassidy</p>
+            <p class="amount">₹127<span>₹257</span></p>
+            <p><button class="button1">BUY</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+<hr><br>
+<!-- *************************************************OFFERS!!****************************************************** -->
+<h2 class="offers">OFFERS 🎉</h2>
+    <br>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <!--<img src="/w3images/team1.jpg" alt="Jane" style="width: 100%">-->
+          <div class="containers">
+            <h2 style="text-align: center">SUMMER SALE!</h2>
+            <h3>GET UP TO %10 OFF on 1st Purchase!</h3>
+            <p class="title">⭐Applicable on all categories &amp; genres</p>
+            <p class="info" style="text-align: center">
+              🕓 valid till June 31,2022
+            </p>
+            <p><button class="button">ORDER NOW !</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <!--<img src="/w3images/team2.jpg" alt="Mike" style="width: 100%" />-->
+          <div class="containers">
+            <h2 style="text-align: center">DEAL OF THE DAY!</h2>
+            <h3>BUY 2 GET 1 FREE!</h3>
+            <p class="title">
+              ⭐ Offer valid on selected products and publishers
+            </p>
+            <p class="info" style="text-align: center">
+              🕓 valid only for today
+            </p>
+            <p><button class="button">ORDER NOW !</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <!--<img src="/w3images/team1.jpg" alt="Jane" style="width: 100%">-->
+          <div class="containers">
+            <h2 style="text-align: center">HOT DEAL!</h2>
+            <h3>SAVE UPTO 15% ON SELF-HELP BOOKS!</h3>
+            <p class="title">⭐ Applicable on all books of the author</p>
+            <p class="info" style="text-align: center">
+              🕓 valid till June 5,2022
+            </p>
+            <p><button class="button">ORDER NOW !</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <!--<img src="/w3images/team3.jpg" alt="John" style="width: 100%" />-->
+          <div class="containers">
+            <h2 style="text-align: center">HOT DEAL!</h2>
+            <h3>SAVE UPTO 20% ON FICTION NOVELS !</h3>
+            <p class="title">⭐ Books of all authors are available</p>
+            <p class="info" style="text-align: center">
+              🕓 valid till May 31,2022
+            </p>
+            <p><button class="button">ORDER NOW !</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+  <!--*************************FOOTER********************************  -->
+
+  <footer
+          class="text-center text-lg-start text-white"
+          style="background-color: rgb(97, 166, 171)"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Hook-a-Book
+            </h6>
+            <p>
+              Designed by the Webteam of Hook-a-Book:<br>
+              Nandika Agrawal<br>
+              Ankita Verma<br>
+              Aatman Upreti<br>
+              Vaibhav Mehrotra<br>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Help</h6>
+            <p>
+              <a class="text-white">Payment</a>
+            </p>
+            <p>
+              <a class="text-white">Shipping</a>
+            </p>
+            <p>
+              <a class="text-white">Return</a>
+            </p>
+            <p>
+              <a class="text-white">FAQ</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Useful links
+            </h6>
+            <p>
+              <a class="text-white">Your Account</a>
+            </p>
+            <p>
+              <a class="text-white">About Us</a>
+            </p>
+            <p>
+              <a class="text-white">Terms and Conditions</a>
+            </p>
+            <p>
+              <a class="text-white">Contact Us</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> MNNIT, Prayagaraj, UP</p>
+            <p><i class="fas fa-envelope mr-3"></i> hookabook@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 91 1234567890</p>
+            <p><i class="fas fa-print mr-3"></i> + 91 1234567890</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2020 Copyright:
+              <a class="text-white" href="https://mdbootstrap.com/"
+                 >HookaBook.com</a
+                >
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
+</body>
+</html> 
