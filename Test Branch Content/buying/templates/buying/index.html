@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Rent book</title>
+        <link href = "{% static 'buying/styles.css' %}" rel = "stylesheet">
+    </head>
+    <body>
+        {% for products in product %}
+        Title : {{ products.title }}
+        <br>
+        Price : {{ products.price }}
+        <br>
+        <!--Image : {{ products.image }}-->
+        <br>
+        Description : {{ products.description }}
+        {% endfor %}
+    </body>
+</html>
